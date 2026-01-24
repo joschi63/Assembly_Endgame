@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: #262626;
+  color: #D9D9D9;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  width: 352px;
+}
+
+header .header-title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #F9F4DA;
+}
+
+header .header-description {
+  font-weight: 500;
+  font-size: 14px;
+  color: #8E8E8E;
+}
+
+.status-div {
+  text-align: center;
+  width: 352px;
+  background-color: #10A95B;
+  color: #F9F4DA;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.status-div h2 {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.status-div p {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0px;
+}
