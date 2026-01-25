@@ -7,10 +7,12 @@ import { languages } from '../../languages.js'
 export default function App() {
     const [currentWord, setCurrentWord] = React.useState("react")
 
+    const [guessedLetters, setGuessedLetters] = React.useState([])
+
     const wordElements = currentWord.split("").map((letter, index) => {
         return (
             <span key={index} className="letter">
-                {letter.toUpperCase()}
+                {guessedLetters.includes(letter) ? letter.toUpperCase() : " "}
             </span>
         )
     })
@@ -26,9 +28,34 @@ export default function App() {
 
     const alphabet = "abcdefghijklmnopqrstuvwxyz"
 
+    function setLetter(letter) {
+        setGuessedLetters(prevLetters => {
+            if (prevLetters.includes(letter)) {
+                return prevLetters
+            }
+            return [...prevLetters, letter]
+        })
+        console.log(guessedLetters)
+    }
+
+    function setClass(letter) {
+        if (guessedLetters.includes(letter)) {
+            if (currentWord.includes(letter)) {
+                return "right-guessed"
+            } else {
+                return "wrong-guessed"
+            }
+        } 
+        return "key"
+    }
+
     const keyboardElements = alphabet.split("").map((letter) => {
         return (
-            <button className="key" key={letter}> {letter.toUpperCase()} </button>
+            <button 
+                className={setClass(letter)} 
+                key={letter} 
+                onClick={() => setLetter(letter)}> {letter.toUpperCase()} 
+            </button>
         )
     })
 
