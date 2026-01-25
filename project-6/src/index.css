@@ -40,6 +40,13 @@ header .header-description {
   padding: 10px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
 .status-div h2 {
   font-weight: 500;
   font-size: 20px;
@@ -50,4 +57,90 @@ header .header-description {
   font-weight: 500;
   font-size: 16px;
   margin: 0px;
+}
+
+.languages-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-top: 4.5px;
+  padding: 1px;
+  height: 34.75px;
+  width: 352px;
+}
+
+.languages-container  .language {
+  width: auto;
+  height: 32.75px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+}
+
+.languages-container .language h2 {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.word-container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.letter {
+  border-bottom: #F9F4DA 2px solid;
+  background-color: #323232;
+  color: #F9F4DA;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard-container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 480px;
+}
+
+.key {
+  border: #D7D7D7 1px solid;
+  border-radius: 4px;
+  background-color: #FCBA29;
+  color: #1E1E1E;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.new-game-button {
+  margin-top: 40px;
+  width: 228px;
+  height: 40px;
+  background-color: #11B5E5;
+  border: #D7D7D7 1px solid;
+  border-radius: 4px;
+  color: #1E1E1E;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
 }
