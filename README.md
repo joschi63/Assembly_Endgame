@@ -10,17 +10,17 @@
       <td style="padding: 10px;">
         <img src="./images/standardView.png" width="250" alt="Startscreen">
         <br>
-        <em>Start</em>
+        <em>start</em>
       </td>
       <td style="padding: 10px;">
         <img src="./images/farewellMessage.png" width="250" alt="Gameplay">
         <br>
-        <em>Spielzug</em>
+        <em>move</em>
       </td>
       <td style="padding: 10px;">
         <img src="./images/winMessage.png" width="250" alt="Gewonnen">
         <br>
-        <em>Gewonnen</em>
+        <em>win</em>
       </td>
     </tr>
   </table>
