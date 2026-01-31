@@ -33,7 +33,7 @@ To run this project locally:
     ```
 2.  **Navigate into the directory:**
     ```bash
-    cd Assembly_Endgame
+    cd Assembly_Endgame/project
     ```
 3.  **Install dependencies:**
     ```bash
