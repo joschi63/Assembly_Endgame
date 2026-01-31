@@ -4,6 +4,30 @@
 >
 > *Can you guess the word before you run out of attempts?*
 
+<div align="center">
+  <table>
+    <tr>
+      <td style="padding: 10px;">
+        <img src="./images/standardView.png" width="250" alt="Startscreen">
+        <br>
+        <em>Start</em>
+      </td>
+      <td style="padding: 10px;">
+        <img src="./images/farewellMessage.png" width="250" alt="Gameplay">
+        <br>
+        <em>Spielzug</em>
+      </td>
+      <td style="padding: 10px;">
+        <img src="./images/winMessage.png" width="250" alt="Gewonnen">
+        <br>
+        <em>Gewonnen</em>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+
 ## 📄 About the Project
 
 **Assembly: Endgame** is a React-based web game inspired by the classic "Hangman." The objective is to guess a random word by selecting letters before all lives are lost.
